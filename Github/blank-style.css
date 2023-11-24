@@ -1,7 +1,13 @@
 div {
   background-color: lightgreen;
 }
-h1, h2, h3 {
+h1 {
+  text-align: center;
+}
+h2 {
+  text-align: center;
+}
+h3 {
   text-align: center;
 }
 .middle {
