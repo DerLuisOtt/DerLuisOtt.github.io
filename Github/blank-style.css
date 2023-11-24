@@ -17,6 +17,7 @@ img {
   text-align: center; 
   outline-style: dotted;
   outline-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red); 
+  outline-width: 12px;
 }
 #Home {
   color: red;
