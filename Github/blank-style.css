@@ -14,7 +14,7 @@ h3 {
   text-align: center;
 }
 img {
-  text-align: center; 
+  img-align: center; 
   outline-style: dotted;
   outline-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red); 
   outline-width: 12px;
