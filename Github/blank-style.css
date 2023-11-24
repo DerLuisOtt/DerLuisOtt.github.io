@@ -13,8 +13,12 @@ h3 {
 img {
   text-align: center; 
   outline-style: dotted;
-  outline-color: Tomato; 
+  outline-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red); 
 }
 #Home {
   color: red;
 }
+li {
+  color: Tomato;
+}
+
