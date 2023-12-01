@@ -1,0 +1,28 @@
+html {
+	height: 98%;
+}
+body {
+	height: 100%;
+}
+.logo {
+	position: absolute;
+	top: 10%;
+	left: 35%;
+	width: 30%;
+}
+.search {
+	position: absolute;
+	top: 40%;
+	left: 30%;
+	width: 40%;
+}
+.tr{
+	float: right;
+	width: 7%;
+}
+.d{
+	position: absolute;
+	bottom: 0px;
+	background-color: #f2f2f2;
+	width: 100%;
+}
