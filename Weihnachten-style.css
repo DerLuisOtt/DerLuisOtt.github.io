@@ -1,3 +1,22 @@
-.Schneemann{
-	width: 218px;
-	height: 120px;
+.main{
+	height:360px;
+	width:654px;
+	background-image:url(https://t3.ftcdn.net/jpg/02/98/03/22/360_F_298032209_YD4pFLDyzMyqBzso5xF5USR05hxqGuXf.jpg);
+}
+.Weihnachtsmann{
+	position:relative;
+	height:50%;
+	top: 15%;
+	left: 30%;
+ animation: a 3s infinite linear;
+}
+@keyframes a {
+	
+  0%{transform: rotate(0deg)
+     }
+  50% {transform: rotate(180deg)
+    }
+  100% {transform: rotate(360deg)
+     }
+}
+
