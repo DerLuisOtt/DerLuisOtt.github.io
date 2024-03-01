@@ -102,13 +102,16 @@ h2{
     .nav{
         justify-content: center;
         flex-wrap:wrap;
-        height: clamp(70px, 30vw, 30px);;
+        height: clamp(140px, 30vw, 30px);;
+    }
+    .nav a{
+        font-size: 200%;
     }
     h2{
-        top: 70px;
+        top: 130px;
     }
     #bild{
-        margin-top: 50px;
+        margin-top: 80px;
     }
 }
 
