@@ -1,0 +1,210 @@
+body{
+    margin:0;
+    padding:0;
+    font-size: 140%;
+    background-color: rgba(216, 207, 207, 0.9);
+}
+
+.nav{
+    margin-top: 0px;
+    height: clamp(35px, 15vw, 15px);;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    align-items: flex-start;
+    z-index: 10;
+    background-color: rgba(164, 85, 20, 0.900);
+}
+
+.nav a{
+    font-size: clamp(30px, 15vw, 10px);
+    width: 25%;
+    text-align: center;
+    color: rgba(216, 207, 207, 0.9);
+}
+
+h2{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    font-size: 300%;
+    top: 40px;
+}
+
+.bild1{
+    display: flex;
+    z-index: 1;
+    background-image: url('Logo.jpg');
+    background-size: 100% 100%;
+    align-items: center;
+}
+
+.bild2{
+    display: none;
+    z-index: 1;
+    background-image: url('Drift.gif');
+    background-size: 100% 100%;
+    align-items: center;
+}
+
+.bild3{
+    display: none;
+    z-index: 1;
+    background-image: url('Tuning-Kolbenruckholfeder.jpg');
+    background-size: 100% 100%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.obenBanner{
+    align-self: flex-start;
+    padding-left:40%;
+    padding-right:40%;
+}
+
+.untenBanner{
+    align-self: flex-end;
+    padding-left:40%;
+    padding-right:40%;
+}
+
+.btn{
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    height: 10%;
+    width: auto;
+    left:0px;
+}
+
+.btn2{
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    height: 10%;
+    width: auto;
+    right:0px;
+}
+
+#bild{
+    position: absolute;
+    margin-top: 2%;
+    width:100%;
+    height: clamp(350px, 30vw, 20px);;
+}
+
+@media screen and (max-width:1280px){
+    #wrap{
+        width:50%;
+    }
+    .nav{
+        justify-content: center;
+        flex-wrap:wrap;
+        height: clamp(70px, 30vw, 30px);;
+    }
+    h2{
+        top: 70px;
+    }
+    #bild{
+        margin-top: 50px;
+    }
+}
+
+footer{
+    position: relative;
+    margin-bottom: 0px;
+}
+
+.foot{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-top-style: solid;
+    border-color: black;
+}
+
+.Angebote{
+    display:flex;
+    justify-content: space-around;
+    margin-top: 460px;
+    position:relative;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.produkt{
+    width: clamp(15%, 30vw, 30%);
+    display: inline-block;
+}
+
+img{
+    margin-left: 10px;
+    height: auto;
+    width: 80%;
+}
+
+.fullWidth{
+    display: inline-block;
+    margin-left: 3%;
+}
+
+.fullWidthR{
+    display: inline-block;
+    margin-right: 8%;
+}
+
+.fullWidthR a{
+    color: black;
+}
+
+.filler{
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    background-color: rgb(164, 85, 20);
+    margin-top: 3%;
+}
+
+.waren{
+    top:3%;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.preis{
+    padding-left: 300px;
+    display: inline-block;
+}
+
+.preisG{
+    padding-left: 1200px;
+    display: inline-block;
+}
+
+.inline{
+    display: inline;
+}
+
+#pro{
+    margin-bottom: 3%;
+}
+
+.r{
+    margin-left: 1%;
+}
+
+#button{
+    padding: 10px;
+    border-radius: 30px;
+    background-color: rgb(164, 85, 20);
+}
+
+a{
+    color: black;
+}
