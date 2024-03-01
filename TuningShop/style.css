@@ -74,7 +74,7 @@ h2{
     display: flex;
     position: absolute;
     z-index: 2;
-    height: 10%;
+    height: 25%;
     width: auto;
     left:0px;
 }
@@ -83,7 +83,7 @@ h2{
     display: flex;
     position: absolute;
     z-index: 2;
-    height: 10%;
+    height: 25%;
     width: auto;
     right:0px;
 }
@@ -102,22 +102,25 @@ h2{
     .nav{
         justify-content: center;
         flex-wrap:wrap;
-        height: clamp(140px, 30vw, 30px);;
+        height: clamp(240px, 30vw, 30px);;
     }
     .nav a{
-        font-size: 200%;
+        font-size: 400%;
     }
     h2{
-        top: 130px;
+        top: 240px;
     }
     #bild{
-        margin-top: 80px;
+        margin-top: 200px;
     }
     h3{
         font-size: 160%;
     }
     h5{
         font-size: 140%;
+    }
+    .Angebote{
+        top: 200px;
     }
 }
 
@@ -187,12 +190,11 @@ img{
 }
 
 .preis{
-    padding-left: 300px;
+    padding-left: 400px;
     display: inline-block;
 }
 
 .preisG{
-    padding-left: 1200px;
     display: inline-block;
 }
 
@@ -205,7 +207,10 @@ img{
 }
 
 .r{
+    display: flex;
     margin-left: 1%;
+    justify-content: space-between;
+    width:90%;
 }
 
 #button{
