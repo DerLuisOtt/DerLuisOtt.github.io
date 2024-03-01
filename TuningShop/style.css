@@ -113,6 +113,12 @@ h2{
     #bild{
         margin-top: 80px;
     }
+    h3{
+        font-size: 160%;
+    }
+    h5{
+        font-size: 140%;
+    }
 }
 
 footer{
