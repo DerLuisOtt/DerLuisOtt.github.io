@@ -1,7 +1,6 @@
 body{
     margin:0;
     padding:0;
-    font-size: 140%;
     background-color: rgba(216, 207, 207, 0.9);
 }
 
@@ -102,7 +101,7 @@ h2{
     .nav{
         justify-content: center;
         flex-wrap:wrap;
-        height: clamp(240px, 30vw, 30px);;
+        height: clamp(240px, 30vw, 30px);
     }
     .nav a{
         font-size: 400%;
@@ -130,7 +129,7 @@ footer{
 }
 
 .foot{
-    margin-top: 50px;
+    margin-top: 250px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -183,19 +182,9 @@ img{
 .waren{
     top:3%;
     display: flex;
-    justify-content: flex-start;
     position: relative;
     flex-wrap: wrap;
     width: 100%;
-}
-
-.preis{
-    padding-left: 400px;
-    display: inline-block;
-}
-
-.preisG{
-    display: inline-block;
 }
 
 .inline{
@@ -221,4 +210,18 @@ img{
 
 a{
     color: black;
+}
+
+.f{
+    display: flex;
+    margin-left: 1%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width:60%;
+}
+
+.d{
+    display: block;
+    justify-self: flex-start;
+    width: 55%;
 }
