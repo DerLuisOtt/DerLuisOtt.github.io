@@ -34,7 +34,7 @@ h2{
 .bild1{
     display: flex;
     z-index: 1;
-    background-image: url('Logo.jpg');
+    background-image: url('Bilder/Logo.jpg');
     background-size: 100% 100%;
     align-items: center;
 }
@@ -42,7 +42,7 @@ h2{
 .bild2{
     display: none;
     z-index: 1;
-    background-image: url('Drift.gif');
+    background-image: url('Bilder/Drift.gif');
     background-size: 100% 100%;
     align-items: center;
 }
@@ -50,7 +50,7 @@ h2{
 .bild3{
     display: none;
     z-index: 1;
-    background-image: url('Tuning-Kolbenruckholfeder.jpg');
+    background-image: url('Bilder/Tuning-Kolbenruckholfeder.jpg');
     background-size: 100% 100%;
     align-items: center;
     justify-content: center;
