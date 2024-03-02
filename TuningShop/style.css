@@ -59,14 +59,14 @@ h2{
 
 .obenBanner{
     align-self: flex-start;
-    padding-left:40%;
-    padding-right:40%;
+    padding-left:30%;
+    padding-right:30%;
 }
 
 .untenBanner{
     align-self: flex-end;
     padding-left:40%;
-    padding-right:40%;
+    padding-right:20%;
 }
 
 .btn{
@@ -91,9 +91,13 @@ h2{
     position: absolute;
     margin-top: 2%;
     width:100%;
-    height: clamp(350px, 30vw, 20px);;
+    height: clamp(350px, 30vw, 20px);
 }
-
+@media screen and (min-width:1280px){
+    html{
+        font-size: 160%;
+      }
+}
 @media screen and (max-width:1280px){
     #wrap{
         width:50%;
@@ -120,6 +124,9 @@ h2{
     }
     .Angebote{
         top: 200px;
+    }
+    .foot{
+        font-size: 170%;
     }
 }
 
@@ -223,5 +230,60 @@ a{
 .d{
     display: block;
     justify-self: flex-start;
-    width: 55%;
+    width: 70%;
+}
+
+.center{
+    position: relative;
+    padding: 20px;
+    border-radius: 30px;
+    background-color: rgb(164, 85, 20);
+    text-align: center;
+}
+
+.outer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    top:100px;
+}
+
+.ainput{
+    height: 30px;
+    width: auto;
+    background-color: rgba(216, 207, 207, 0.9);
+}
+
+.action{
+    font-size: 120%;
+    text-align: start;
+}
+
+.anmelden{
+    height:50px;
+    width: 100px;
+}
+
+.lin{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    top:100px;
+}
+
+.sup{
+    position: relative;
+    padding: 20px;
+    border-radius: 30px;
+    background-color: rgb(164, 85, 20);
+    left: 2%;
+}
+
+.sinput{
+    height: 200px;
+    width: 800px;
+    background-color: rgba(216, 207, 207, 0.9);
 }
