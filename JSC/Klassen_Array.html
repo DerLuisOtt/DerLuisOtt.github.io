@@ -1,0 +1,23 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <script>
+            a = new Array([['Nettersheim'],['Michael'],['001'],['02205/35122','00491573/89663211']],[['Ott'],['Luis'],['002'],['0221/86673','00491590/1377069']],[['Nagel'],['Niklas'],['003'],['0223/43252','00491345/81202121']],[['Mann'],['Peter'],['004'],['004901525/8347765']]);
+            for(i in a){
+                document.write('<table border="1" cellpadding="10" cellspacing ="10"><tr><td>Name</td><td>Vorname</td><td>ID</td></tr><tr>')
+                for(j in a[i]){
+                    if(!Array.isArray(m[i][j])){
+                        document.write('<td>' + a[i][j] + '</td>')
+                    }
+                    else{
+                        for(k in a[i][j]){
+                        document.write('<td>' + a[i][j][k] + '</td>')
+                        }
+                    }
+                }
+                document.write('</tr></table><br>')
+            }
+        </script>
+    </body>
+</html>

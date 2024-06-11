@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>JavaScript</title>
+        <meta charset="utf-8">
+        <script>
+            /*var vornamen = "Michael";
+            //alert("Hallo " + vornamen + "!");
+            alert('Hallo ' + vornamen + '!'); 
+            ok = confirm("Wollen Sie die Seite verlassen?");
+            //alert(ok);
+            if(ok)
+            location.href = "http://www.google.de";
+            z = prompt("Geben Sie eine Zahl zwischen 1 und 10 ein!");
+            if(z == null)
+                alert("Sie haben auf Abbrechen geclickt!");
+            else
+                alert(z);*/
+            //Zufallszahl zwischen 1 und 100 generieren
+            z = Math.floor(Math.random() * 100) + 1;
+            //Der User soll die Zahl erraten. Er hat 6 Versuche. 
+            for(v = 1;v<7;v++){
+                r = prompt("Versuch " + v);
+                if(r > z) {
+                    alert("Die Eingabe ist zu groß!")
+                }
+                else if(r < z) {
+                    alert("Die Eingabe ist zu klein!")
+                }
+                else {
+                    alert("Gewonnen!");
+                    break;
+                }
+            }
+            switch(v){
+                case 1,2: alert("Super Hero");break;
+                case 3: alert("Hero");break;
+                case 4: alert("Held");break;
+                case 5: alert("Mittel");break;
+                case 6: alert("Naja");break;
+                default: alert("Du Niete!");
+            }
+            alert(z)
+        </script>
+    </head>
+    <body>
+        <h1>Zahlenraten</h1>
+        <a href="08_04_2024.html">Nochmal?</a>
+        <h1>Arrays</h1>
+        <script>
+            /*z = new Array(10,100,1000); 
+            for( i = 0; i < z.length; i++) {
+                alert("Das " + (i + 1) + ". Element hat den Wert: " + z[i] + ".");
+
+            }
+            for( i in z){
+                alert(z[i]);
+            }*/
+        </script>
+    </body>
+</html>

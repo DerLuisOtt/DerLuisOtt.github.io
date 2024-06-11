@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Cookies</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <a href="javascript:schreibeCookie()">Cookie schreiben</a>
+        <a href="javascript:leseCookie()">Cookie lesen</a>
+        <a href="javascript:speicherCookie()">Cookie speichern</a>
+        <a href="javascript:loescheCookie()">Cookie loeschen</a>
+        <script>
+            function schreibeCookie(){
+                a = (document.cookie=prompt("User:"));
+            }
+            function leseCookie(){
+                alert(document.cookie)
+            }
+            function speicherCookie(){
+                d = new Date();
+                d.setSeconds(d.getMonth() + 10);
+                document.cookie=a + d.toGMTString();
+            }
+            function loescheCookie(){
+                d = new Date();
+                d.setSeconds(d.getMonth() - 10);
+                document.cookie=a + d.toGMTString();
+            }
+        </script>
+    </body>
+</html>

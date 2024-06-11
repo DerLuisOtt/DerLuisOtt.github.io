@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>Uhrzeit</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div id="message2"></div>
+        <div id="message"></div>
+        <script>
+            var h, m, s, j, M, d, w;
+            function uhrzeit(){
+                var uhr = new Date();
+                h = uhr.getHours();
+                m = uhr.getMinutes();
+                s = uhr.getSeconds();
+                j = uhr.getFullYear();
+                M = uhr.getMonth();
+                w = uhr.getDay();
+                d = uhr.getDate();
+                
+                if(h<10){
+                    h = "0" + h;
+                }
+                if(m<10){
+                    m = "0" + m;
+                }
+                if(s<10){
+                    s = "0" + s;
+                }
+                if(d<10){
+                    d = "0" + d;
+                }
+                switch(w){
+                    case 0: w = "Sonntag";break;
+                    case 1: w = "Montag";break;
+                    case 2: w = "Dienstag";break;
+                    case 3: w = "Mittwoch";break;
+                    case 4: w = "Donnerstag";break;
+                    case 5: w = "Freitag";break;
+                    case 6: w = "Samstag";break;
+                    default: w = "Error";
+                }
+                switch(M){
+                    case 0: M = "Januar";break;
+                    case 1: M = "Februar";break;
+                    case 2: M = "Maerz";break;
+                    case 3: M = "April";break;
+                    case 4: M = "Mai";break;
+                    case 5: M = "Juni";break;
+                    case 6: M = "Juli";break;
+                    case 7: M = "August";break;
+                    case 8: M = "September";break;
+                    case 9: M = "Oktober";break;
+                    case 10: M = "November";break;
+                    case 11: M = "Dezember";break;
+                    default: M = "Error";
+                }
+                document.getElementById("message2").innerHTML = w + ", "  + d + ". " + M + " " + j;
+                document.getElementById("message").innerHTML = h + ":" + m + ":" + s;
+            }
+            uhrzeit();
+            setInterval(uhrzeit,1000);
+        </script>
+    </body>
+</html>

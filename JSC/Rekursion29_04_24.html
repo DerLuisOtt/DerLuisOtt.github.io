@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Rekursion</title>
+        <meta charset="utf-8">
+        <script>
+            a = [1,2,[10,20,30,[100,[1000,2000,3000],200,400],50],3];
+            ausgeben(a);
+            function ausgeben(a){
+                for(let i = 0; i < a.length; i++){
+                    if(Array.isArray(a[i])){
+                        ausgeben(a[i]);
+                    }
+                    else{
+                        document.write('<p>' + a[i] + '</p>');
+                    }
+                }
+            }
+        </script>
+    </head>
+</html>

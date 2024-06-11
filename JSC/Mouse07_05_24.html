@@ -1,0 +1,36 @@
+<script>
+    g = null;
+    function tB(p, b) {
+        if(g!=p)
+            document.images[p].src = 'images/' + b + '.gif';
+    }
+
+    function tC(p, b){
+        if(g!=null)
+            document.images[g].src = 'images/' + g + '.gif';
+        document.images[p].src='images/' + b + '.gif';
+        g = p;
+    }
+        
+</script>
+<meta charset="UTF-8" />
+<title>Bilder mit JS</title>
+</head>
+<body>
+<div align="center">
+    <img src="images/home1.gif" name="home1" 
+       onmouseout="tB('home1', 'home1')"
+       onmouseover="tB('home1', 'home2')"
+       onclick="tC('home1', 'home3')";>
+
+    <img src="images/links1.gif" name="links1" 
+       onmouseout="tB('links1', 'links1')"
+       onmouseover="tB('links1', 'links2')"
+       onclick="tC('links1', 'links3')";>
+
+    <img src="images/email1.gif" name="email1" 
+       onmouseout="tB('email1', 'email1')"
+       onmouseover="tB('email1', 'email2')"
+       onclick="tC('email1', 'email3')";>
+</div>
+</body>

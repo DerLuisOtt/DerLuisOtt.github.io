@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Wuerfel</title>
+        <meta charset="utf-8">
+        <script>
+            function tC(){
+                zaehler = 0;
+                e = setInterval(tD,250);
+                tD();
+                document.getElementById("myBtn").disabled = true;
+            }
+            function tD(){
+                zaehler += 250;
+                z = Math.floor(Math.random() * 6) + 1;
+                document.images['bildZ'].src='images/dice_' + z + '.png'
+                y = Math.floor(Math.random() * 6) + 1;
+                document.images['bildY'].src='images/dice_' + y + '.png'
+                x = Math.floor(Math.random() * 6) + 1;
+                document.images['bild'].src='images/dice_' + x + '.png'
+                if(x == y && x == z && y == z || zaehler>=10000){
+                    if(zaehler>=10000){
+                        document.getElementById("message").innerHTML = "Verloren";
+                    }
+                    else{
+                        document.getElementById("message").innerHTML = (z * 300) + "€ Gewonnen!";
+                    }
+                    clearInterval(e);
+                    document.getElementById("myBtn").disabled = false;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+            <div align="center">
+                <img src="images/dice_1.png" id="bildZ">
+                <img src="images/dice_1.png" id="bild">
+                <img src="images/dice_1.png" id="bildY">
+                <br>
+                <input type="button" value="Wuerfeln" onclick=" tC();" id="myBtn">
+                <br>
+                <p id="message"></p>
+            </div>
+        </form>
+    </body>
+</html>
