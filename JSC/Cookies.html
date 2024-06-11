@@ -18,12 +18,12 @@
             function speicherCookie(){
                 d = new Date();
                 d.setSeconds(d.getMonth() + 10);
-                document.cookie=a + d.toGMTString();
+                document.cookie=a + "expires: " + d.toGMTString();
             }
             function loescheCookie(){
                 d = new Date();
                 d.setSeconds(d.getMonth() - 10);
-                document.cookie=a + d.toGMTString();
+                document.cookie=a + "expires: " + d.toGMTString();
             }
         </script>
     </body>
