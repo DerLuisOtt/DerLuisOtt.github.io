@@ -17,12 +17,12 @@
             }
             function speicherCookie(){
                 d = new Date();
-                d.setSeconds(d.getMonth() + 10);
+                d.setMonth(d.getMonth() + 10);
                 document.cookie=a + "expires: " + d.toGMTString();
             }
             function loescheCookie(){
                 d = new Date();
-                d.setSeconds(d.getMonth() - 10);
+                d.setMonth(d.getMonth() - 10);
                 document.cookie=a + "expires: " + d.toGMTString();
             }
         </script>
